@@ -11,7 +11,7 @@ module "aws_es" {
     instance_count           = var.instance_count
     instance_type            = var.instance_type
     zone_awareness_enabled   = "true"
-    availability_zone_count  = "2"
+    availability_zone_count  = "3"
   }
 
   ebs_options = {
