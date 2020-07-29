@@ -33,6 +33,11 @@ variable "instance_type" {
   type        = string
 }
 
+variable "master_count" {
+  description = "enter master count"
+  type        = string
+}
+
 
 variable "volume_size" {
   description = "enter volume size"
