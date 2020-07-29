@@ -1,10 +1,10 @@
-resource "aws_cloudwatch_log_group" "es_cloudwatch" {
-  name = "${var.domain_name}-log-g"
+resource "aws_cloudwatch_log_group" "es_cloudwatch_log_group" {
+  name = "${var.domain_name}-log_group"
   tags = var.tags
 }
 
-resource "aws_cloudwatch_log_resource_policy" "es_aws_cloudwatch_log-policy" {
-  policy_name = "${var.domain_name}-p"
+resource "aws_cloudwatch_log_resource_policy" "es_aws_cloudwatch_log_resource_policy" {
+  policy_name = "${var.domain_name}-policy"
 
   policy_document = <<CONFIG
 {
