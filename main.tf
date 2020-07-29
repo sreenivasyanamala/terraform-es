@@ -7,8 +7,8 @@ module "aws_es" {
 
  
     cluster_config_dedicated_master_enabled = true
-    cluster_config_dedicated_master_type    = var.dedicated_master_type
-    cluster_config_dedicated_master_count   = var.dedicated_master_count
+    cluster_config_dedicated_master_type    = var.master_instance_type
+    cluster_config_dedicated_master_count   = var.master_count
     cluster_config_instance_count           = var.instance_count
     cluster_config_instance_type            = var.instance_type
     cluster_config_zone_awareness_enabled   = "true"
