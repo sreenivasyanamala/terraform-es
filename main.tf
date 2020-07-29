@@ -1,6 +1,6 @@
 module "aws_es" {
 
-  source = "./elasticsearch"
+  source = "./elastic-search"
 
   domain_name           = var.domain_name
   elasticsearch_version = var.elasticsearch_version
