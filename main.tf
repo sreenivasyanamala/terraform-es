@@ -26,8 +26,8 @@ module "aws_es" {
   }
 
   vpc_options = {
-    subnet_ids         = ["var.subnetid_1", "var.subnetid_2"]
-    security_group_ids = ["var.security_group_id"]
+    subnet_ids         = ["${var.subnetid_1}", "${var.subnetid_2}"]
+    security_group_ids = ["${var.security_group_id}"]
   }
 
   node_to_node_encryption_enabled                = true
